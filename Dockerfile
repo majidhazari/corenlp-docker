@@ -17,7 +17,7 @@ RUN wget --no-verbose http://nlp.stanford.edu/software/stanford-corenlp-full-201
 	wget --no-verbose -P stanford-corenlp-full-2018-10-05/ http://nlp.stanford.edu/software/stanford-spanish-corenlp-2018-10-05-models.jar && \
 	rm *.zip
 
-WORKDIR stanford-corenlp-full-2018-02-27
+WORKDIR stanford-corenlp-full-2018-10-05
 
 RUN export CLASSPATH="`find . -name '*.jar'`"
 
